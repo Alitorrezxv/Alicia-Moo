@@ -11,11 +11,14 @@ tareas = ["Comprar leche", "Estudiar Python", "Hacer ejercicio"]
 with open("tareas.txt", "w") as archivo:
     for tarea in tareas:
         archivo.write(tarea + "\n")
-with open("tareas.txt", "r") as archivo:
-    lineas = archivo.readlines()
-    for linea in lineas:
-        print(linea.strip())
+class medicamento(generico):
+    def __init__(self, sustancia, nomcomer, gramaje, grupo, precio):
+        super().__init__(sustancia, nomcomer)
+        self.tylenol = tylelol
+    
+    def presentarse(self):
+        return f"El medicamento {self.sustancia}, de la marca {self.nomcomer} tiene un gramaje de {self.gramaje} es de la fraccion
+        {self.grupo} con un precio de {self.precio}."
 
-nueva_tarea = input("Introduce una nueva tarea: ")
-with open("tareas.txt", "a") as archivo:
-    archivo.write(nueva_tarea + "\n")
+para = medicameno("Paracetamol", "Tylenol", 500, "VI", 105)
+print(para.medicamento())
